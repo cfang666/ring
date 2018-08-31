@@ -1,0 +1,749 @@
+16:58:10.948 logback-mybatis [main] INFO  c.example.RingsSpringbootApplication - Starting RingsSpringbootApplication on Stu1001 with PID 3220 (F:\W\rings_springboot\target\classes started by Administrator in F:\W\rings_springboot)
+16:58:10.967 logback-mybatis [main] INFO  c.example.RingsSpringbootApplication - No active profile set, falling back to default profiles: default
+16:58:11.096 logback-mybatis [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4f83df68: startup date [Tue Aug 21 16:58:11 CST 2018]; root of context hierarchy
+16:58:14.127 logback-mybatis [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$948e5831] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+16:58:15.200 logback-mybatis [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+16:58:15.252 logback-mybatis [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+16:58:15.270 logback-mybatis [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+16:58:15.270 logback-mybatis [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.32
+16:58:15.293 logback-mybatis [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_151\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_151/bin/server;C:/Program Files/Java/jre1.8.0_151/bin;C:/Program Files/Java/jre1.8.0_151/lib/amd64;F:\app\Administrator\product\11.2.0\dbhome_1\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_151\bin;C:\Program Files\Java\jdk1.8.0_151\lib\dt.jar;C:\Program Files\Java\jdk1.8.0_151\jre\bin;"D:\MySQL57\mysql-5.6.17-winx64"\bin;D:\tomcat7\lib;D:\tomcat7\lib\servlet-api.jar;D:\tomcat7\lib\jsp-api.jar;F:\spring-tool-suite-3.6.3.SR1-e4.4.1-win32-x86_64\sts-bundle\sts-3.6.3.SR1;;.]
+16:58:15.920 logback-mybatis [localhost-startStop-1] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+16:58:15.932 logback-mybatis [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+16:58:15.933 logback-mybatis [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 4838 ms
+16:58:17.327 logback-mybatis [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+16:58:17.329 logback-mybatis [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'webMvcMetricsFilter' to: [/*]
+16:58:17.329 logback-mybatis [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+16:58:17.329 logback-mybatis [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+16:58:17.330 logback-mybatis [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+16:58:17.331 logback-mybatis [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpTraceFilter' to: [/*]
+16:58:17.332 logback-mybatis [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+16:58:18.450 logback-mybatis [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+16:58:18.964 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4f83df68: startup date [Tue Aug 21 16:58:11 CST 2018]; root of context hierarchy
+16:58:19.115 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/author/{id}],methods=[GET]}" onto public com.example.model.Author com.example.controller.AuthorController.getOneAuthor(int)
+16:58:19.117 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/authors],methods=[GET]}" onto public java.util.List<com.example.model.Author> com.example.controller.AuthorController.getAllAuthors() throws java.lang.Exception
+16:58:19.118 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/authors],methods=[POST],consumes=[application/json]}" onto public int com.example.controller.AuthorController.addAuthor(com.example.model.Author)
+16:58:19.119 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/authors/{id}],methods=[DELETE]}" onto public int com.example.controller.AuthorController.delAuthor(int)
+16:58:19.135 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/compare],methods=[GET]}" onto public java.lang.String com.example.controller.ShopController.compare()
+16:58:19.136 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/header],methods=[GET]}" onto public java.lang.String com.example.controller.ShopController.header(javax.servlet.http.HttpSession,org.springframework.ui.Model)
+16:58:19.142 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/search]}" onto public java.lang.String com.example.controller.ShopController.home(java.lang.String,org.springframework.ui.Model)
+16:58:19.143 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/index],methods=[GET]}" onto public java.lang.String com.example.controller.ShopController.shopIndex(org.springframework.ui.Model) throws java.lang.Exception
+16:58:19.143 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/admgoods],methods=[GET]}" onto public java.lang.String com.example.controller.ShopController.admgoods(int,org.springframework.ui.Model) throws java.lang.Exception
+16:58:19.143 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/admtype],methods=[GET]}" onto public java.lang.String com.example.controller.ShopController.admtype(org.springframework.ui.Model) throws java.lang.Exception
+16:58:19.143 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/product_page],methods=[GET]}" onto public java.lang.String com.example.controller.ShopController.product_page()
+16:58:19.143 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/shopping_cart],methods=[GET]}" onto public java.lang.String com.example.controller.ShopController.shopping_cart(javax.servlet.http.HttpSession,org.springframework.ui.Model)
+16:58:19.144 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/checkout],methods=[GET]}" onto public java.lang.String com.example.controller.ShopController.checkout()
+16:58:19.144 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/catalog_grid],methods=[GET]}" onto public java.lang.String com.example.controller.ShopController.catalog_grid(int,int,org.springframework.ui.Model) throws java.lang.Exception
+16:58:19.144 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/catalog_list],methods=[GET]}" onto public java.lang.String com.example.controller.ShopController.catalog_list(int,int,org.springframework.ui.Model)
+16:58:19.145 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/searchgoods],methods=[GET]}" onto public java.lang.String com.example.controller.ShopController.searchGoods(int,int,org.springframework.ui.Model)
+16:58:19.145 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/contact_us],methods=[GET]}" onto public java.lang.String com.example.controller.ShopController.contact_us()
+16:58:19.145 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/404],methods=[GET]}" onto public java.lang.String com.example.controller.ShopController.shop404()
+16:58:19.146 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/blog],methods=[GET]}" onto public java.lang.String com.example.controller.ShopController.blog()
+16:58:19.146 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/blog_post],methods=[GET]}" onto public java.lang.String com.example.controller.ShopController.blog_post()
+16:58:19.146 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/buy_now],methods=[GET]}" onto public java.lang.String com.example.controller.ShopController.buy_now()
+16:58:19.147 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/delgoods],methods=[GET]}" onto public java.lang.String com.example.controller.ShopController.delgoods(int,org.springframework.ui.Model)
+16:58:19.149 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/updategoods],methods=[GET]}" onto public java.lang.String com.example.controller.ShopController.updategoods(int,org.springframework.ui.Model)
+16:58:19.150 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/selGoods],methods=[GET]}" onto public java.lang.String com.example.controller.ShopController.selGoods(int,org.springframework.ui.Model)
+16:58:19.150 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/doupdategoods],methods=[POST]}" onto public java.lang.String com.example.controller.ShopController.doupdategoods(com.example.model.Goods,org.springframework.validation.BindingResult,org.springframework.ui.Model)
+16:58:19.150 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/addgoods],methods=[GET]}" onto public java.lang.String com.example.controller.ShopController.addgoods(com.example.model.Goods,org.springframework.validation.BindingResult,org.springframework.ui.Model)
+16:58:19.151 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/addtypes],methods=[POST]}" onto public java.lang.String com.example.controller.ShopController.addtypes(com.example.model.Type,org.springframework.validation.BindingResult,org.springframework.ui.Model)
+16:58:19.151 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/deltypes],methods=[GET]}" onto public java.lang.String com.example.controller.ShopController.deltypes(int,org.springframework.ui.Model)
+16:58:19.151 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/updatetypes],methods=[GET]}" onto public java.lang.String com.example.controller.ShopController.updatetypes(int,org.springframework.ui.Model)
+16:58:19.151 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/doupdatetypes],methods=[POST]}" onto public java.lang.String com.example.controller.ShopController.doupdatetypes(com.example.model.Type,org.springframework.validation.BindingResult,org.springframework.ui.Model)
+16:58:19.152 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/delCart],methods=[GET]}" onto public java.lang.String com.example.controller.ShopController.delcart(int,javax.servlet.http.HttpSession,org.springframework.ui.Model)
+16:58:19.152 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/updateCart],methods=[GET]}" onto public java.lang.String com.example.controller.ShopController.updatecart(int,int,javax.servlet.http.HttpSession,org.springframework.ui.Model)
+16:58:19.152 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/dosearch],methods=[POST]}" onto public java.lang.String com.example.controller.ShopController.doSearch(java.lang.String,javax.servlet.http.HttpSession,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+16:58:19.157 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/register],methods=[GET]}" onto public java.lang.String com.example.controller.UserController.register()
+16:58:19.158 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/info],methods=[GET]}" onto public java.lang.String com.example.controller.UserController.info(javax.servlet.http.HttpSession,org.springframework.ui.Model) throws java.lang.Exception
+16:58:19.158 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/upinfo]}" onto public java.lang.String com.example.controller.UserController.home(java.lang.String,java.lang.String,org.springframework.ui.Model) throws java.lang.Exception
+16:58:19.171 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/doreg],methods=[POST]}" onto public java.lang.String com.example.controller.UserController.doReg(com.example.model.User,org.springframework.validation.BindingResult,org.springframework.ui.Model) throws java.lang.Exception
+16:58:19.171 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/dologin],methods=[POST]}" onto public java.lang.String com.example.controller.UserController.dologin(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpSession,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.springframework.ui.Model) throws java.lang.Exception
+16:58:19.172 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/loginout],methods=[GET]}" onto public java.lang.String com.example.controller.UserController.logout(javax.servlet.http.HttpSession)
+16:58:19.172 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/loginadm],methods=[GET]}" onto public java.lang.String com.example.controller.UserController.admlogin(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+16:58:19.172 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/dologinadm],methods=[POST]}" onto public java.lang.String com.example.controller.UserController.doadmlogin(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpSession,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.springframework.ui.Model) throws java.lang.Exception
+16:58:19.172 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/loginoutadm],methods=[GET]}" onto public java.lang.String com.example.controller.UserController.admloginout(javax.servlet.http.HttpSession)
+16:58:19.172 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/doupdate],methods=[POST]}" onto public java.lang.String com.example.controller.UserController.doupdate(com.example.model.User,org.springframework.validation.BindingResult,org.springframework.web.servlet.mvc.support.RedirectAttributes) throws java.lang.Exception
+16:58:19.173 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/login],methods=[GET]}" onto public java.lang.String com.example.controller.UserController.login(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+16:58:19.175 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+16:58:19.176 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+16:58:19.212 logback-mybatis [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+16:58:19.213 logback-mybatis [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+16:58:19.920 logback-mybatis [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+16:58:19.934 logback-mybatis [main] INFO  o.s.b.a.e.w.s.WebMvcEndpointHandlerMapping - Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+16:58:19.935 logback-mybatis [main] INFO  o.s.b.a.e.w.s.WebMvcEndpointHandlerMapping - Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+16:58:19.936 logback-mybatis [main] INFO  o.s.b.a.e.w.s.WebMvcEndpointHandlerMapping - Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+16:58:19.990 logback-mybatis [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+16:58:19.994 logback-mybatis [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+16:58:20.003 logback-mybatis [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+16:58:20.079 logback-mybatis [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+16:58:20.092 logback-mybatis [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+16:58:20.208 logback-mybatis [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+16:58:20.213 logback-mybatis [main] INFO  c.example.RingsSpringbootApplication - Started RingsSpringbootApplication in 10.837 seconds (JVM running for 12.432)
+16:58:30.985 logback-mybatis [http-nio-8081-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+16:58:30.985 logback-mybatis [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+16:58:31.368 logback-mybatis [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 383 ms
+16:58:33.839 logback-mybatis [http-nio-8081-exec-1] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+16:58:33.840 logback-mybatis [http-nio-8081-exec-1] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+16:58:35.432 logback-mybatis [http-nio-8081-exec-1] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Handler dispatch failed; nested exception is java.lang.ExceptionInInitializerError] with root cause
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(Unknown Source)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:325)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:340)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:634)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:581)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:498)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:460)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:884)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Unknown Source)
+16:59:10.701 logback-mybatis [http-nio-8081-exec-6] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Handler dispatch failed; nested exception is java.lang.NoClassDefFoundError: Could not initialize class com.example.lettuce.RedisCli] with root cause
+java.lang.NoClassDefFoundError: Could not initialize class com.example.lettuce.RedisCli
+	at com.example.controller.ShopController.readTypesFromRedis(ShopController.java:49)
+	at com.example.controller.ShopController.shopIndex(ShopController.java:241)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:90)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:155)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:123)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:800)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1471)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+16:59:13.400 logback-mybatis [http-nio-8081-exec-1] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Handler dispatch failed; nested exception is java.lang.NoClassDefFoundError: Could not initialize class com.example.lettuce.RedisCli] with root cause
+java.lang.NoClassDefFoundError: Could not initialize class com.example.lettuce.RedisCli
+	at com.example.controller.ShopController.readTypesFromRedis(ShopController.java:49)
+	at com.example.controller.ShopController.shopIndex(ShopController.java:241)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:90)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:155)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:123)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:800)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1471)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+16:59:14.294 logback-mybatis [http-nio-8081-exec-8] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Handler dispatch failed; nested exception is java.lang.NoClassDefFoundError: Could not initialize class com.example.lettuce.RedisCli] with root cause
+java.lang.NoClassDefFoundError: Could not initialize class com.example.lettuce.RedisCli
+	at com.example.controller.ShopController.readTypesFromRedis(ShopController.java:49)
+	at com.example.controller.ShopController.shopIndex(ShopController.java:241)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:90)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:155)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:123)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:800)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1471)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+16:59:16.555 logback-mybatis [http-nio-8081-exec-4] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Handler dispatch failed; nested exception is java.lang.NoClassDefFoundError: Could not initialize class com.example.lettuce.RedisCli] with root cause
+java.lang.NoClassDefFoundError: Could not initialize class com.example.lettuce.RedisCli
+	at com.example.controller.ShopController.readTypesFromRedis(ShopController.java:49)
+	at com.example.controller.ShopController.shopIndex(ShopController.java:241)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:90)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:155)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:123)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:800)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1471)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+16:59:29.920 logback-mybatis [http-nio-8081-exec-1] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Handler dispatch failed; nested exception is java.lang.NoClassDefFoundError: Could not initialize class com.example.lettuce.RedisCli] with root cause
+java.lang.NoClassDefFoundError: Could not initialize class com.example.lettuce.RedisCli
+	at com.example.controller.ShopController.readTypesFromRedis(ShopController.java:49)
+	at com.example.controller.ShopController.shopIndex(ShopController.java:241)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:90)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:155)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:123)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:800)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1471)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+16:59:38.693 logback-mybatis [main] INFO  c.example.RingsSpringbootApplication - Starting RingsSpringbootApplication on Stu1001 with PID 5084 (F:\W\rings_springboot\target\classes started by Administrator in F:\W\rings_springboot)
+16:59:38.698 logback-mybatis [main] INFO  c.example.RingsSpringbootApplication - No active profile set, falling back to default profiles: default
+16:59:38.868 logback-mybatis [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6aeb35e6: startup date [Tue Aug 21 16:59:38 CST 2018]; root of context hierarchy
+16:59:40.975 logback-mybatis [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$948e5831] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+16:59:41.720 logback-mybatis [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+16:59:41.740 logback-mybatis [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+16:59:41.762 logback-mybatis [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+16:59:41.762 logback-mybatis [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.32
+16:59:41.777 logback-mybatis [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_151\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_151/bin/server;C:/Program Files/Java/jre1.8.0_151/bin;C:/Program Files/Java/jre1.8.0_151/lib/amd64;F:\app\Administrator\product\11.2.0\dbhome_1\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_151\bin;C:\Program Files\Java\jdk1.8.0_151\lib\dt.jar;C:\Program Files\Java\jdk1.8.0_151\jre\bin;"D:\MySQL57\mysql-5.6.17-winx64"\bin;D:\tomcat7\lib;D:\tomcat7\lib\servlet-api.jar;D:\tomcat7\lib\jsp-api.jar;F:\spring-tool-suite-3.6.3.SR1-e4.4.1-win32-x86_64\sts-bundle\sts-3.6.3.SR1;;.]
+16:59:42.371 logback-mybatis [localhost-startStop-1] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+16:59:42.383 logback-mybatis [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+16:59:42.384 logback-mybatis [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3516 ms
+16:59:43.535 logback-mybatis [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+16:59:43.537 logback-mybatis [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'webMvcMetricsFilter' to: [/*]
+16:59:43.538 logback-mybatis [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+16:59:43.539 logback-mybatis [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+16:59:43.541 logback-mybatis [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+16:59:43.542 logback-mybatis [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpTraceFilter' to: [/*]
+16:59:43.543 logback-mybatis [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+16:59:44.301 logback-mybatis [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+16:59:44.686 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6aeb35e6: startup date [Tue Aug 21 16:59:38 CST 2018]; root of context hierarchy
+16:59:44.792 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/authors],methods=[GET]}" onto public java.util.List<com.example.model.Author> com.example.controller.AuthorController.getAllAuthors() throws java.lang.Exception
+16:59:44.793 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/author/{id}],methods=[GET]}" onto public com.example.model.Author com.example.controller.AuthorController.getOneAuthor(int)
+16:59:44.803 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/authors],methods=[POST],consumes=[application/json]}" onto public int com.example.controller.AuthorController.addAuthor(com.example.model.Author)
+16:59:44.804 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/authors/{id}],methods=[DELETE]}" onto public int com.example.controller.AuthorController.delAuthor(int)
+16:59:44.823 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/compare],methods=[GET]}" onto public java.lang.String com.example.controller.ShopController.compare()
+16:59:44.824 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/header],methods=[GET]}" onto public java.lang.String com.example.controller.ShopController.header(javax.servlet.http.HttpSession,org.springframework.ui.Model)
+16:59:44.825 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/search]}" onto public java.lang.String com.example.controller.ShopController.home(java.lang.String,org.springframework.ui.Model)
+16:59:44.826 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/index],methods=[GET]}" onto public java.lang.String com.example.controller.ShopController.shopIndex(org.springframework.ui.Model) throws java.lang.Exception
+16:59:44.826 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/admgoods],methods=[GET]}" onto public java.lang.String com.example.controller.ShopController.admgoods(int,org.springframework.ui.Model) throws java.lang.Exception
+16:59:44.827 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/admtype],methods=[GET]}" onto public java.lang.String com.example.controller.ShopController.admtype(org.springframework.ui.Model) throws java.lang.Exception
+16:59:44.827 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/product_page],methods=[GET]}" onto public java.lang.String com.example.controller.ShopController.product_page()
+16:59:44.827 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/shopping_cart],methods=[GET]}" onto public java.lang.String com.example.controller.ShopController.shopping_cart(javax.servlet.http.HttpSession,org.springframework.ui.Model)
+16:59:44.828 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/checkout],methods=[GET]}" onto public java.lang.String com.example.controller.ShopController.checkout()
+16:59:44.828 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/catalog_grid],methods=[GET]}" onto public java.lang.String com.example.controller.ShopController.catalog_grid(int,int,org.springframework.ui.Model) throws java.lang.Exception
+16:59:44.829 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/catalog_list],methods=[GET]}" onto public java.lang.String com.example.controller.ShopController.catalog_list(int,int,org.springframework.ui.Model)
+16:59:44.830 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/searchgoods],methods=[GET]}" onto public java.lang.String com.example.controller.ShopController.searchGoods(int,int,org.springframework.ui.Model)
+16:59:44.830 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/contact_us],methods=[GET]}" onto public java.lang.String com.example.controller.ShopController.contact_us()
+16:59:44.831 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/404],methods=[GET]}" onto public java.lang.String com.example.controller.ShopController.shop404()
+16:59:44.832 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/blog],methods=[GET]}" onto public java.lang.String com.example.controller.ShopController.blog()
+16:59:44.833 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/blog_post],methods=[GET]}" onto public java.lang.String com.example.controller.ShopController.blog_post()
+16:59:44.833 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/buy_now],methods=[GET]}" onto public java.lang.String com.example.controller.ShopController.buy_now()
+16:59:44.834 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/delgoods],methods=[GET]}" onto public java.lang.String com.example.controller.ShopController.delgoods(int,org.springframework.ui.Model)
+16:59:44.835 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/updategoods],methods=[GET]}" onto public java.lang.String com.example.controller.ShopController.updategoods(int,org.springframework.ui.Model)
+16:59:44.836 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/selGoods],methods=[GET]}" onto public java.lang.String com.example.controller.ShopController.selGoods(int,org.springframework.ui.Model)
+16:59:44.836 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/doupdategoods],methods=[POST]}" onto public java.lang.String com.example.controller.ShopController.doupdategoods(com.example.model.Goods,org.springframework.validation.BindingResult,org.springframework.ui.Model)
+16:59:44.836 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/addgoods],methods=[GET]}" onto public java.lang.String com.example.controller.ShopController.addgoods(com.example.model.Goods,org.springframework.validation.BindingResult,org.springframework.ui.Model)
+16:59:44.837 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/addtypes],methods=[POST]}" onto public java.lang.String com.example.controller.ShopController.addtypes(com.example.model.Type,org.springframework.validation.BindingResult,org.springframework.ui.Model)
+16:59:44.837 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/deltypes],methods=[GET]}" onto public java.lang.String com.example.controller.ShopController.deltypes(int,org.springframework.ui.Model)
+16:59:44.837 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/updatetypes],methods=[GET]}" onto public java.lang.String com.example.controller.ShopController.updatetypes(int,org.springframework.ui.Model)
+16:59:44.838 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/doupdatetypes],methods=[POST]}" onto public java.lang.String com.example.controller.ShopController.doupdatetypes(com.example.model.Type,org.springframework.validation.BindingResult,org.springframework.ui.Model)
+16:59:44.841 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/delCart],methods=[GET]}" onto public java.lang.String com.example.controller.ShopController.delcart(int,javax.servlet.http.HttpSession,org.springframework.ui.Model)
+16:59:44.842 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/updateCart],methods=[GET]}" onto public java.lang.String com.example.controller.ShopController.updatecart(int,int,javax.servlet.http.HttpSession,org.springframework.ui.Model)
+16:59:44.842 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/dosearch],methods=[POST]}" onto public java.lang.String com.example.controller.ShopController.doSearch(java.lang.String,javax.servlet.http.HttpSession,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+16:59:44.848 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/register],methods=[GET]}" onto public java.lang.String com.example.controller.UserController.register()
+16:59:44.849 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/info],methods=[GET]}" onto public java.lang.String com.example.controller.UserController.info(javax.servlet.http.HttpSession,org.springframework.ui.Model) throws java.lang.Exception
+16:59:44.850 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/upinfo]}" onto public java.lang.String com.example.controller.UserController.home(java.lang.String,java.lang.String,org.springframework.ui.Model) throws java.lang.Exception
+16:59:44.850 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/login],methods=[GET]}" onto public java.lang.String com.example.controller.UserController.login(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+16:59:44.850 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/doreg],methods=[POST]}" onto public java.lang.String com.example.controller.UserController.doReg(com.example.model.User,org.springframework.validation.BindingResult,org.springframework.ui.Model) throws java.lang.Exception
+16:59:44.851 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/dologin],methods=[POST]}" onto public java.lang.String com.example.controller.UserController.dologin(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpSession,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.springframework.ui.Model) throws java.lang.Exception
+16:59:44.852 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/loginout],methods=[GET]}" onto public java.lang.String com.example.controller.UserController.logout(javax.servlet.http.HttpSession)
+16:59:44.852 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/loginadm],methods=[GET]}" onto public java.lang.String com.example.controller.UserController.admlogin(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+16:59:44.852 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/dologinadm],methods=[POST]}" onto public java.lang.String com.example.controller.UserController.doadmlogin(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpSession,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.springframework.ui.Model) throws java.lang.Exception
+16:59:44.853 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/loginoutadm],methods=[GET]}" onto public java.lang.String com.example.controller.UserController.admloginout(javax.servlet.http.HttpSession)
+16:59:44.854 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/doupdate],methods=[POST]}" onto public java.lang.String com.example.controller.UserController.doupdate(com.example.model.User,org.springframework.validation.BindingResult,org.springframework.web.servlet.mvc.support.RedirectAttributes) throws java.lang.Exception
+16:59:44.857 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+16:59:44.858 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+16:59:44.965 logback-mybatis [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+16:59:44.966 logback-mybatis [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+16:59:45.552 logback-mybatis [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+16:59:45.565 logback-mybatis [main] INFO  o.s.b.a.e.w.s.WebMvcEndpointHandlerMapping - Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+16:59:45.566 logback-mybatis [main] INFO  o.s.b.a.e.w.s.WebMvcEndpointHandlerMapping - Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+16:59:45.567 logback-mybatis [main] INFO  o.s.b.a.e.w.s.WebMvcEndpointHandlerMapping - Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+16:59:45.632 logback-mybatis [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+16:59:45.636 logback-mybatis [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+16:59:45.644 logback-mybatis [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+16:59:45.668 logback-mybatis [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+16:59:45.682 logback-mybatis [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+16:59:45.725 logback-mybatis [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+16:59:45.736 logback-mybatis [main] INFO  c.example.RingsSpringbootApplication - Started RingsSpringbootApplication in 7.985 seconds (JVM running for 8.882)
+16:59:49.372 logback-mybatis [http-nio-8081-exec-9] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+16:59:49.372 logback-mybatis [http-nio-8081-exec-9] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+16:59:49.421 logback-mybatis [http-nio-8081-exec-9] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 49 ms
+16:59:49.872 logback-mybatis [http-nio-8081-exec-9] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+16:59:49.874 logback-mybatis [http-nio-8081-exec-9] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+16:59:50.479 logback-mybatis [http-nio-8081-exec-9] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+16:59:50.973 logback-mybatis [http-nio-8081-exec-9] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+16:59:50.996 logback-mybatis [http-nio-8081-exec-9] DEBUG c.e.mapper.TypeMapper.findAllType - ==>  Preparing: select typeID, typeName from type 
+16:59:51.021 logback-mybatis [http-nio-8081-exec-9] DEBUG c.e.mapper.TypeMapper.findAllType - ==> Parameters: 
+16:59:51.101 logback-mybatis [http-nio-8081-exec-9] DEBUG c.e.mapper.TypeMapper.findAllType - <==      Total: 4
+16:59:51.112 logback-mybatis [http-nio-8081-exec-9] DEBUG c.e.m.GoodsMapper.findSpecialGoods - ==>  Preparing: select gsID, gsName, gsImage, gsPrice, gsModel, gsNum, typeID, gsColor, gsSize from goods where gsID between 7 and 14 
+16:59:51.112 logback-mybatis [http-nio-8081-exec-9] DEBUG c.e.m.GoodsMapper.findSpecialGoods - ==> Parameters: 
+16:59:51.178 logback-mybatis [http-nio-8081-exec-9] DEBUG c.e.m.GoodsMapper.findSpecialGoods - <==      Total: 8
+16:59:53.165 logback-mybatis [http-nio-8081-exec-9] DEBUG c.e.mapper.GoodsMapper.findCartGoods - ==>  Preparing: SELECT g.gsName,cartNum,g.gsPrice,g.gsImage,g.gsModel FROM shopcart s,USER u,goods g WHERE s.userID =u.userID AND s.gsID = g.gsID AND u.userName = ? 
+16:59:53.167 logback-mybatis [http-nio-8081-exec-9] DEBUG c.e.mapper.GoodsMapper.findCartGoods - ==> Parameters: null
+16:59:53.229 logback-mybatis [http-nio-8081-exec-9] DEBUG c.e.mapper.GoodsMapper.findCartGoods - <==      Total: 0
+17:00:08.688 logback-mybatis [http-nio-8081-exec-10] DEBUG c.e.mapper.GoodsMapper.findCartGoods - ==>  Preparing: SELECT g.gsName,cartNum,g.gsPrice,g.gsImage,g.gsModel FROM shopcart s,USER u,goods g WHERE s.userID =u.userID AND s.gsID = g.gsID AND u.userName = ? 
+17:00:08.689 logback-mybatis [http-nio-8081-exec-10] DEBUG c.e.mapper.GoodsMapper.findCartGoods - ==> Parameters: null
+17:00:08.692 logback-mybatis [http-nio-8081-exec-10] DEBUG c.e.mapper.GoodsMapper.findCartGoods - <==      Total: 0
+17:00:16.667 logback-mybatis [http-nio-8081-exec-8] DEBUG c.e.mapper.GoodsMapper.findCartGoods - ==>  Preparing: SELECT g.gsName,cartNum,g.gsPrice,g.gsImage,g.gsModel FROM shopcart s,USER u,goods g WHERE s.userID =u.userID AND s.gsID = g.gsID AND u.userName = ? 
+17:00:16.668 logback-mybatis [http-nio-8081-exec-8] DEBUG c.e.mapper.GoodsMapper.findCartGoods - ==> Parameters: null
+17:00:16.669 logback-mybatis [http-nio-8081-exec-8] DEBUG c.e.mapper.GoodsMapper.findCartGoods - <==      Total: 0
+17:00:21.491 logback-mybatis [http-nio-8081-exec-4] DEBUG c.e.mapper.GoodsMapper.findCartGoods - ==>  Preparing: SELECT g.gsName,cartNum,g.gsPrice,g.gsImage,g.gsModel FROM shopcart s,USER u,goods g WHERE s.userID =u.userID AND s.gsID = g.gsID AND u.userName = ? 
+17:00:21.491 logback-mybatis [http-nio-8081-exec-4] DEBUG c.e.mapper.GoodsMapper.findCartGoods - ==> Parameters: null
+17:00:21.492 logback-mybatis [http-nio-8081-exec-4] DEBUG c.e.mapper.GoodsMapper.findCartGoods - <==      Total: 0
+17:00:25.257 logback-mybatis [http-nio-8081-exec-2] DEBUG c.e.mapper.GoodsMapper.findCartGoods - ==>  Preparing: SELECT g.gsName,cartNum,g.gsPrice,g.gsImage,g.gsModel FROM shopcart s,USER u,goods g WHERE s.userID =u.userID AND s.gsID = g.gsID AND u.userName = ? 
+17:00:25.258 logback-mybatis [http-nio-8081-exec-2] DEBUG c.e.mapper.GoodsMapper.findCartGoods - ==> Parameters: null
+17:00:25.258 logback-mybatis [http-nio-8081-exec-2] DEBUG c.e.mapper.GoodsMapper.findCartGoods - <==      Total: 0
+17:00:28.787 logback-mybatis [http-nio-8081-exec-3] DEBUG c.e.mapper.GoodsMapper.findCartGoods - ==>  Preparing: SELECT g.gsName,cartNum,g.gsPrice,g.gsImage,g.gsModel FROM shopcart s,USER u,goods g WHERE s.userID =u.userID AND s.gsID = g.gsID AND u.userName = ? 
+17:00:28.787 logback-mybatis [http-nio-8081-exec-3] DEBUG c.e.mapper.GoodsMapper.findCartGoods - ==> Parameters: null
+17:00:28.788 logback-mybatis [http-nio-8081-exec-3] DEBUG c.e.mapper.GoodsMapper.findCartGoods - <==      Total: 0
+17:00:31.231 logback-mybatis [http-nio-8081-exec-1] DEBUG c.e.mapper.GoodsMapper.findCartGoods - ==>  Preparing: SELECT g.gsName,cartNum,g.gsPrice,g.gsImage,g.gsModel FROM shopcart s,USER u,goods g WHERE s.userID =u.userID AND s.gsID = g.gsID AND u.userName = ? 
+17:00:31.231 logback-mybatis [http-nio-8081-exec-1] DEBUG c.e.mapper.GoodsMapper.findCartGoods - ==> Parameters: null
+17:00:31.232 logback-mybatis [http-nio-8081-exec-1] DEBUG c.e.mapper.GoodsMapper.findCartGoods - <==      Total: 0
+17:00:33.472 logback-mybatis [http-nio-8081-exec-9] DEBUG c.e.mapper.GoodsMapper.findCartGoods - ==>  Preparing: SELECT g.gsName,cartNum,g.gsPrice,g.gsImage,g.gsModel FROM shopcart s,USER u,goods g WHERE s.userID =u.userID AND s.gsID = g.gsID AND u.userName = ? 
+17:00:33.473 logback-mybatis [http-nio-8081-exec-9] DEBUG c.e.mapper.GoodsMapper.findCartGoods - ==> Parameters: null
+17:00:33.473 logback-mybatis [http-nio-8081-exec-9] DEBUG c.e.mapper.GoodsMapper.findCartGoods - <==      Total: 0
+17:00:37.220 logback-mybatis [http-nio-8081-exec-10] DEBUG c.e.mapper.GoodsMapper.findCartGoods - ==>  Preparing: SELECT g.gsName,cartNum,g.gsPrice,g.gsImage,g.gsModel FROM shopcart s,USER u,goods g WHERE s.userID =u.userID AND s.gsID = g.gsID AND u.userName = ? 
+17:00:37.220 logback-mybatis [http-nio-8081-exec-10] DEBUG c.e.mapper.GoodsMapper.findCartGoods - ==> Parameters: null
+17:00:37.223 logback-mybatis [http-nio-8081-exec-10] DEBUG c.e.mapper.GoodsMapper.findCartGoods - <==      Total: 0
+17:00:40.468 logback-mybatis [http-nio-8081-exec-6] DEBUG c.e.mapper.GoodsMapper.findCartGoods - ==>  Preparing: SELECT g.gsName,cartNum,g.gsPrice,g.gsImage,g.gsModel FROM shopcart s,USER u,goods g WHERE s.userID =u.userID AND s.gsID = g.gsID AND u.userName = ? 
+17:00:40.468 logback-mybatis [http-nio-8081-exec-6] DEBUG c.e.mapper.GoodsMapper.findCartGoods - ==> Parameters: null
+17:00:40.469 logback-mybatis [http-nio-8081-exec-6] DEBUG c.e.mapper.GoodsMapper.findCartGoods - <==      Total: 0
+17:00:50.025 logback-mybatis [http-nio-8081-exec-2] DEBUG c.e.mapper.GoodsMapper.findCartGoods - ==>  Preparing: SELECT g.gsName,cartNum,g.gsPrice,g.gsImage,g.gsModel FROM shopcart s,USER u,goods g WHERE s.userID =u.userID AND s.gsID = g.gsID AND u.userName = ? 
+17:00:50.025 logback-mybatis [http-nio-8081-exec-2] DEBUG c.e.mapper.GoodsMapper.findCartGoods - ==> Parameters: null
+17:00:50.026 logback-mybatis [http-nio-8081-exec-2] DEBUG c.e.mapper.GoodsMapper.findCartGoods - <==      Total: 0
+17:00:55.489 logback-mybatis [http-nio-8081-exec-10] DEBUG c.e.mapper.GoodsMapper.findCartGoods - ==>  Preparing: SELECT g.gsName,cartNum,g.gsPrice,g.gsImage,g.gsModel FROM shopcart s,USER u,goods g WHERE s.userID =u.userID AND s.gsID = g.gsID AND u.userName = ? 
+17:00:55.489 logback-mybatis [http-nio-8081-exec-10] DEBUG c.e.mapper.GoodsMapper.findCartGoods - ==> Parameters: null
+17:00:55.491 logback-mybatis [http-nio-8081-exec-10] DEBUG c.e.mapper.GoodsMapper.findCartGoods - <==      Total: 0
+17:01:17.886 logback-mybatis [http-nio-8081-exec-8] DEBUG c.e.mapper.GoodsMapper.findCartGoods - ==>  Preparing: SELECT g.gsName,cartNum,g.gsPrice,g.gsImage,g.gsModel FROM shopcart s,USER u,goods g WHERE s.userID =u.userID AND s.gsID = g.gsID AND u.userName = ? 
+17:01:17.886 logback-mybatis [http-nio-8081-exec-8] DEBUG c.e.mapper.GoodsMapper.findCartGoods - ==> Parameters: null
+17:01:17.887 logback-mybatis [http-nio-8081-exec-8] DEBUG c.e.mapper.GoodsMapper.findCartGoods - <==      Total: 0
+17:01:25.672 logback-mybatis [http-nio-8081-exec-4] DEBUG c.e.mapper.GoodsMapper.findCartGoods - ==>  Preparing: SELECT g.gsName,cartNum,g.gsPrice,g.gsImage,g.gsModel FROM shopcart s,USER u,goods g WHERE s.userID =u.userID AND s.gsID = g.gsID AND u.userName = ? 
+17:01:25.673 logback-mybatis [http-nio-8081-exec-4] DEBUG c.e.mapper.GoodsMapper.findCartGoods - ==> Parameters: null
+17:01:25.676 logback-mybatis [http-nio-8081-exec-4] DEBUG c.e.mapper.GoodsMapper.findCartGoods - <==      Total: 0
+17:01:35.858 logback-mybatis [http-nio-8081-exec-1] DEBUG c.e.mapper.GoodsMapper.selGoods - ==>  Preparing: select * from goods where gsID=? 
+17:01:35.859 logback-mybatis [http-nio-8081-exec-1] DEBUG c.e.mapper.GoodsMapper.selGoods - ==> Parameters: 16(Integer)
+17:01:35.860 logback-mybatis [http-nio-8081-exec-1] DEBUG c.e.mapper.GoodsMapper.selGoods - <==      Total: 1
+17:01:36.096 logback-mybatis [http-nio-8081-exec-1] DEBUG c.e.mapper.GoodsMapper.findCartGoods - ==>  Preparing: SELECT g.gsName,cartNum,g.gsPrice,g.gsImage,g.gsModel FROM shopcart s,USER u,goods g WHERE s.userID =u.userID AND s.gsID = g.gsID AND u.userName = ? 
+17:01:36.096 logback-mybatis [http-nio-8081-exec-1] DEBUG c.e.mapper.GoodsMapper.findCartGoods - ==> Parameters: null
+17:01:36.100 logback-mybatis [http-nio-8081-exec-1] DEBUG c.e.mapper.GoodsMapper.findCartGoods - <==      Total: 0
+17:02:08.548 logback-mybatis [http-nio-8081-exec-2] DEBUG c.e.mapper.GoodsMapper.findCartGoods - ==>  Preparing: SELECT g.gsName,cartNum,g.gsPrice,g.gsImage,g.gsModel FROM shopcart s,USER u,goods g WHERE s.userID =u.userID AND s.gsID = g.gsID AND u.userName = ? 
+17:02:08.549 logback-mybatis [http-nio-8081-exec-2] DEBUG c.e.mapper.GoodsMapper.findCartGoods - ==> Parameters: null
+17:02:08.549 logback-mybatis [http-nio-8081-exec-2] DEBUG c.e.mapper.GoodsMapper.findCartGoods - <==      Total: 0
+17:02:19.733 logback-mybatis [http-nio-8081-exec-10] DEBUG c.e.mapper.GoodsMapper.findCartGoods - ==>  Preparing: SELECT g.gsName,cartNum,g.gsPrice,g.gsImage,g.gsModel FROM shopcart s,USER u,goods g WHERE s.userID =u.userID AND s.gsID = g.gsID AND u.userName = ? 
+17:02:19.739 logback-mybatis [http-nio-8081-exec-10] DEBUG c.e.mapper.GoodsMapper.findCartGoods - ==> Parameters: 333(String)
+17:02:19.761 logback-mybatis [http-nio-8081-exec-10] DEBUG c.e.mapper.GoodsMapper.findCartGoods - <==      Total: 0
+17:02:24.770 logback-mybatis [http-nio-8081-exec-6] DEBUG c.e.mapper.GoodsMapper.findCartGoods - ==>  Preparing: SELECT g.gsName,cartNum,g.gsPrice,g.gsImage,g.gsModel FROM shopcart s,USER u,goods g WHERE s.userID =u.userID AND s.gsID = g.gsID AND u.userName = ? 
+17:02:24.770 logback-mybatis [http-nio-8081-exec-6] DEBUG c.e.mapper.GoodsMapper.findCartGoods - ==> Parameters: 333(String)
+17:02:24.771 logback-mybatis [http-nio-8081-exec-6] DEBUG c.e.mapper.GoodsMapper.findCartGoods - <==      Total: 0
+17:02:27.817 logback-mybatis [http-nio-8081-exec-3] DEBUG c.e.mapper.GoodsMapper.findCartGoods - ==>  Preparing: SELECT g.gsName,cartNum,g.gsPrice,g.gsImage,g.gsModel FROM shopcart s,USER u,goods g WHERE s.userID =u.userID AND s.gsID = g.gsID AND u.userName = ? 
+17:02:27.817 logback-mybatis [http-nio-8081-exec-3] DEBUG c.e.mapper.GoodsMapper.findCartGoods - ==> Parameters: 333(String)
+17:02:27.818 logback-mybatis [http-nio-8081-exec-3] DEBUG c.e.mapper.GoodsMapper.findCartGoods - <==      Total: 0
+17:02:27.819 logback-mybatis [http-nio-8081-exec-3] DEBUG c.e.mapper.GoodsMapper.totalCart - ==>  Preparing: SELECT IFNULL(SUM(g.gsPrice*cartNum),0) FROM shopcart s,USER u,goods g WHERE s.userID =u.userID AND s.gsID = g.gsID AND u.userName =? 
+17:02:27.820 logback-mybatis [http-nio-8081-exec-3] DEBUG c.e.mapper.GoodsMapper.totalCart - ==> Parameters: 333(String)
+17:02:27.860 logback-mybatis [http-nio-8081-exec-3] DEBUG c.e.mapper.GoodsMapper.totalCart - <==      Total: 1
+17:02:28.052 logback-mybatis [http-nio-8081-exec-3] DEBUG c.e.mapper.GoodsMapper.findCartGoods - ==>  Preparing: SELECT g.gsName,cartNum,g.gsPrice,g.gsImage,g.gsModel FROM shopcart s,USER u,goods g WHERE s.userID =u.userID AND s.gsID = g.gsID AND u.userName = ? 
+17:02:28.053 logback-mybatis [http-nio-8081-exec-3] DEBUG c.e.mapper.GoodsMapper.findCartGoods - ==> Parameters: 333(String)
+17:02:28.059 logback-mybatis [http-nio-8081-exec-3] DEBUG c.e.mapper.GoodsMapper.findCartGoods - <==      Total: 0
+17:02:39.341 logback-mybatis [http-nio-8081-exec-7] DEBUG c.e.mapper.GoodsMapper.selGoods - ==>  Preparing: select * from goods where gsID=? 
+17:02:39.343 logback-mybatis [http-nio-8081-exec-7] DEBUG c.e.mapper.GoodsMapper.selGoods - ==> Parameters: 16(Integer)
+17:02:39.349 logback-mybatis [http-nio-8081-exec-7] DEBUG c.e.mapper.GoodsMapper.selGoods - <==      Total: 1
+17:02:39.356 logback-mybatis [http-nio-8081-exec-7] DEBUG c.e.mapper.GoodsMapper.findCartGoods - ==>  Preparing: SELECT g.gsName,cartNum,g.gsPrice,g.gsImage,g.gsModel FROM shopcart s,USER u,goods g WHERE s.userID =u.userID AND s.gsID = g.gsID AND u.userName = ? 
+17:02:39.356 logback-mybatis [http-nio-8081-exec-7] DEBUG c.e.mapper.GoodsMapper.findCartGoods - ==> Parameters: 333(String)
+17:02:39.357 logback-mybatis [http-nio-8081-exec-7] DEBUG c.e.mapper.GoodsMapper.findCartGoods - <==      Total: 0
+17:04:27.514 logback-mybatis [http-nio-8081-exec-10] DEBUG c.e.mapper.GoodsMapper.selGoods - ==>  Preparing: select * from goods where gsID=? 
+17:04:27.515 logback-mybatis [http-nio-8081-exec-10] DEBUG c.e.mapper.GoodsMapper.selGoods - ==> Parameters: 16(Integer)
+17:04:27.518 logback-mybatis [http-nio-8081-exec-10] DEBUG c.e.mapper.GoodsMapper.selGoods - <==      Total: 1
+17:04:27.525 logback-mybatis [http-nio-8081-exec-10] DEBUG c.e.mapper.GoodsMapper.findCartGoods - ==>  Preparing: SELECT g.gsName,cartNum,g.gsPrice,g.gsImage,g.gsModel FROM shopcart s,USER u,goods g WHERE s.userID =u.userID AND s.gsID = g.gsID AND u.userName = ? 
+17:04:27.526 logback-mybatis [http-nio-8081-exec-10] DEBUG c.e.mapper.GoodsMapper.findCartGoods - ==> Parameters: 333(String)
+17:04:27.527 logback-mybatis [http-nio-8081-exec-10] DEBUG c.e.mapper.GoodsMapper.findCartGoods - <==      Total: 0
+17:06:13.810 logback-mybatis [http-nio-8081-exec-8] DEBUG c.e.mapper.GoodsMapper.selGoods - ==>  Preparing: select * from goods where gsID=? 
+17:06:13.811 logback-mybatis [http-nio-8081-exec-8] DEBUG c.e.mapper.GoodsMapper.selGoods - ==> Parameters: 16(Integer)
+17:06:13.812 logback-mybatis [http-nio-8081-exec-8] DEBUG c.e.mapper.GoodsMapper.selGoods - <==      Total: 1
+17:06:13.815 logback-mybatis [http-nio-8081-exec-8] DEBUG c.e.mapper.GoodsMapper.findCartGoods - ==>  Preparing: SELECT g.gsName,cartNum,g.gsPrice,g.gsImage,g.gsModel FROM shopcart s,USER u,goods g WHERE s.userID =u.userID AND s.gsID = g.gsID AND u.userName = ? 
+17:06:13.815 logback-mybatis [http-nio-8081-exec-8] DEBUG c.e.mapper.GoodsMapper.findCartGoods - ==> Parameters: 333(String)
+17:06:13.816 logback-mybatis [http-nio-8081-exec-8] DEBUG c.e.mapper.GoodsMapper.findCartGoods - <==      Total: 0
+17:06:27.496 logback-mybatis [http-nio-8081-exec-4] DEBUG c.e.mapper.GoodsMapper.findCartGoods - ==>  Preparing: SELECT g.gsName,cartNum,g.gsPrice,g.gsImage,g.gsModel FROM shopcart s,USER u,goods g WHERE s.userID =u.userID AND s.gsID = g.gsID AND u.userName = ? 
+17:06:27.497 logback-mybatis [http-nio-8081-exec-4] DEBUG c.e.mapper.GoodsMapper.findCartGoods - ==> Parameters: 333(String)
+17:06:27.498 logback-mybatis [http-nio-8081-exec-4] DEBUG c.e.mapper.GoodsMapper.findCartGoods - <==      Total: 0
+17:06:28.954 logback-mybatis [http-nio-8081-exec-6] DEBUG c.e.mapper.GoodsMapper.selGoods - ==>  Preparing: select * from goods where gsID=? 
+17:06:28.955 logback-mybatis [http-nio-8081-exec-6] DEBUG c.e.mapper.GoodsMapper.selGoods - ==> Parameters: 1(Integer)
+17:06:28.961 logback-mybatis [http-nio-8081-exec-6] DEBUG c.e.mapper.GoodsMapper.selGoods - <==      Total: 1
+17:06:28.964 logback-mybatis [http-nio-8081-exec-6] DEBUG c.e.mapper.GoodsMapper.findCartGoods - ==>  Preparing: SELECT g.gsName,cartNum,g.gsPrice,g.gsImage,g.gsModel FROM shopcart s,USER u,goods g WHERE s.userID =u.userID AND s.gsID = g.gsID AND u.userName = ? 
+17:06:28.965 logback-mybatis [http-nio-8081-exec-6] DEBUG c.e.mapper.GoodsMapper.findCartGoods - ==> Parameters: 333(String)
+17:06:28.969 logback-mybatis [http-nio-8081-exec-6] DEBUG c.e.mapper.GoodsMapper.findCartGoods - <==      Total: 0
+17:07:12.037 logback-mybatis [main] INFO  c.example.RingsSpringbootApplication - Starting RingsSpringbootApplication on Stu1001 with PID 3944 (F:\W\rings_springboot\target\classes started by Administrator in F:\W\rings_springboot)
+17:07:12.041 logback-mybatis [main] INFO  c.example.RingsSpringbootApplication - No active profile set, falling back to default profiles: default
+17:07:12.191 logback-mybatis [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7d8995e: startup date [Tue Aug 21 17:07:12 CST 2018]; root of context hierarchy
+17:07:14.281 logback-mybatis [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8afa63a5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+17:07:15.025 logback-mybatis [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+17:07:15.049 logback-mybatis [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+17:07:15.073 logback-mybatis [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+17:07:15.073 logback-mybatis [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.32
+17:07:15.086 logback-mybatis [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_151\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_151/bin/server;C:/Program Files/Java/jre1.8.0_151/bin;C:/Program Files/Java/jre1.8.0_151/lib/amd64;F:\app\Administrator\product\11.2.0\dbhome_1\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_151\bin;C:\Program Files\Java\jdk1.8.0_151\lib\dt.jar;C:\Program Files\Java\jdk1.8.0_151\jre\bin;"D:\MySQL57\mysql-5.6.17-winx64"\bin;D:\tomcat7\lib;D:\tomcat7\lib\servlet-api.jar;D:\tomcat7\lib\jsp-api.jar;F:\spring-tool-suite-3.6.3.SR1-e4.4.1-win32-x86_64\sts-bundle\sts-3.6.3.SR1;;.]
+17:07:15.562 logback-mybatis [localhost-startStop-1] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+17:07:15.578 logback-mybatis [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+17:07:15.578 logback-mybatis [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3387 ms
+17:07:16.755 logback-mybatis [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+17:07:16.757 logback-mybatis [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'webMvcMetricsFilter' to: [/*]
+17:07:16.757 logback-mybatis [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+17:07:16.757 logback-mybatis [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+17:07:16.758 logback-mybatis [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+17:07:16.758 logback-mybatis [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpTraceFilter' to: [/*]
+17:07:16.759 logback-mybatis [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+17:07:17.585 logback-mybatis [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+17:07:17.975 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7d8995e: startup date [Tue Aug 21 17:07:12 CST 2018]; root of context hierarchy
+17:07:18.094 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/authors],methods=[GET]}" onto public java.util.List<com.example.model.Author> com.example.controller.AuthorController.getAllAuthors() throws java.lang.Exception
+17:07:18.096 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/author/{id}],methods=[GET]}" onto public com.example.model.Author com.example.controller.AuthorController.getOneAuthor(int)
+17:07:18.097 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/authors],methods=[POST],consumes=[application/json]}" onto public int com.example.controller.AuthorController.addAuthor(com.example.model.Author)
+17:07:18.098 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/authors/{id}],methods=[DELETE]}" onto public int com.example.controller.AuthorController.delAuthor(int)
+17:07:18.114 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/compare],methods=[GET]}" onto public java.lang.String com.example.controller.ShopController.compare()
+17:07:18.119 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/header],methods=[GET]}" onto public java.lang.String com.example.controller.ShopController.header(javax.servlet.http.HttpSession,org.springframework.ui.Model)
+17:07:18.121 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/search]}" onto public java.lang.String com.example.controller.ShopController.home(java.lang.String,org.springframework.ui.Model)
+17:07:18.121 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/index],methods=[GET]}" onto public java.lang.String com.example.controller.ShopController.shopIndex(org.springframework.ui.Model) throws java.lang.Exception
+17:07:18.122 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/admgoods],methods=[GET]}" onto public java.lang.String com.example.controller.ShopController.admgoods(int,org.springframework.ui.Model) throws java.lang.Exception
+17:07:18.127 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/admtype],methods=[GET]}" onto public java.lang.String com.example.controller.ShopController.admtype(org.springframework.ui.Model) throws java.lang.Exception
+17:07:18.128 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/product_page],methods=[GET]}" onto public java.lang.String com.example.controller.ShopController.product_page()
+17:07:18.129 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/shopping_cart],methods=[GET]}" onto public java.lang.String com.example.controller.ShopController.shopping_cart(javax.servlet.http.HttpSession,org.springframework.ui.Model)
+17:07:18.129 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/checkout],methods=[GET]}" onto public java.lang.String com.example.controller.ShopController.checkout()
+17:07:18.129 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/catalog_grid],methods=[GET]}" onto public java.lang.String com.example.controller.ShopController.catalog_grid(int,int,org.springframework.ui.Model) throws java.lang.Exception
+17:07:18.129 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/catalog_list],methods=[GET]}" onto public java.lang.String com.example.controller.ShopController.catalog_list(int,int,org.springframework.ui.Model)
+17:07:18.131 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/searchgoods],methods=[GET]}" onto public java.lang.String com.example.controller.ShopController.searchGoods(int,int,org.springframework.ui.Model)
+17:07:18.131 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/contact_us],methods=[GET]}" onto public java.lang.String com.example.controller.ShopController.contact_us()
+17:07:18.131 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/404],methods=[GET]}" onto public java.lang.String com.example.controller.ShopController.shop404()
+17:07:18.131 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/blog],methods=[GET]}" onto public java.lang.String com.example.controller.ShopController.blog()
+17:07:18.136 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/blog_post],methods=[GET]}" onto public java.lang.String com.example.controller.ShopController.blog_post()
+17:07:18.136 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/buy_now],methods=[GET]}" onto public java.lang.String com.example.controller.ShopController.buy_now()
+17:07:18.137 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/delgoods],methods=[GET]}" onto public java.lang.String com.example.controller.ShopController.delgoods(int,org.springframework.ui.Model)
+17:07:18.137 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/updategoods],methods=[GET]}" onto public java.lang.String com.example.controller.ShopController.updategoods(int,org.springframework.ui.Model)
+17:07:18.138 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/selGoods],methods=[GET]}" onto public java.lang.String com.example.controller.ShopController.selGoods(int,org.springframework.ui.Model)
+17:07:18.138 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/doupdategoods],methods=[POST]}" onto public java.lang.String com.example.controller.ShopController.doupdategoods(com.example.model.Goods,org.springframework.validation.BindingResult,org.springframework.ui.Model)
+17:07:18.138 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/addgoods],methods=[GET]}" onto public java.lang.String com.example.controller.ShopController.addgoods(com.example.model.Goods,org.springframework.validation.BindingResult,org.springframework.ui.Model)
+17:07:18.139 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/addtypes],methods=[POST]}" onto public java.lang.String com.example.controller.ShopController.addtypes(com.example.model.Type,org.springframework.validation.BindingResult,org.springframework.ui.Model)
+17:07:18.140 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/deltypes],methods=[GET]}" onto public java.lang.String com.example.controller.ShopController.deltypes(int,org.springframework.ui.Model)
+17:07:18.141 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/updatetypes],methods=[GET]}" onto public java.lang.String com.example.controller.ShopController.updatetypes(int,org.springframework.ui.Model)
+17:07:18.141 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/doupdatetypes],methods=[POST]}" onto public java.lang.String com.example.controller.ShopController.doupdatetypes(com.example.model.Type,org.springframework.validation.BindingResult,org.springframework.ui.Model)
+17:07:18.141 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/delCart],methods=[GET]}" onto public java.lang.String com.example.controller.ShopController.delcart(int,javax.servlet.http.HttpSession,org.springframework.ui.Model)
+17:07:18.141 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/updateCart],methods=[GET]}" onto public java.lang.String com.example.controller.ShopController.updatecart(int,int,javax.servlet.http.HttpSession,org.springframework.ui.Model)
+17:07:18.142 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/dosearch],methods=[POST]}" onto public java.lang.String com.example.controller.ShopController.doSearch(java.lang.String,javax.servlet.http.HttpSession,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+17:07:18.146 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/register],methods=[GET]}" onto public java.lang.String com.example.controller.UserController.register()
+17:07:18.147 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/info],methods=[GET]}" onto public java.lang.String com.example.controller.UserController.info(javax.servlet.http.HttpSession,org.springframework.ui.Model) throws java.lang.Exception
+17:07:18.147 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/upinfo]}" onto public java.lang.String com.example.controller.UserController.home(java.lang.String,java.lang.String,org.springframework.ui.Model) throws java.lang.Exception
+17:07:18.148 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/login],methods=[GET]}" onto public java.lang.String com.example.controller.UserController.login(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+17:07:18.148 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/doreg],methods=[POST]}" onto public java.lang.String com.example.controller.UserController.doReg(com.example.model.User,org.springframework.validation.BindingResult,org.springframework.ui.Model) throws java.lang.Exception
+17:07:18.149 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/dologin],methods=[POST]}" onto public java.lang.String com.example.controller.UserController.dologin(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpSession,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.springframework.ui.Model) throws java.lang.Exception
+17:07:18.149 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/loginout],methods=[GET]}" onto public java.lang.String com.example.controller.UserController.logout(javax.servlet.http.HttpSession)
+17:07:18.149 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/loginadm],methods=[GET]}" onto public java.lang.String com.example.controller.UserController.admlogin(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+17:07:18.150 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/dologinadm],methods=[POST]}" onto public java.lang.String com.example.controller.UserController.doadmlogin(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpSession,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.springframework.ui.Model) throws java.lang.Exception
+17:07:18.150 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/loginoutadm],methods=[GET]}" onto public java.lang.String com.example.controller.UserController.admloginout(javax.servlet.http.HttpSession)
+17:07:18.150 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/shop/doupdate],methods=[POST]}" onto public java.lang.String com.example.controller.UserController.doupdate(com.example.model.User,org.springframework.validation.BindingResult,org.springframework.web.servlet.mvc.support.RedirectAttributes) throws java.lang.Exception
+17:07:18.153 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+17:07:18.153 logback-mybatis [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+17:07:18.186 logback-mybatis [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+17:07:18.186 logback-mybatis [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+17:07:18.789 logback-mybatis [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+17:07:18.802 logback-mybatis [main] INFO  o.s.b.a.e.w.s.WebMvcEndpointHandlerMapping - Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+17:07:18.803 logback-mybatis [main] INFO  o.s.b.a.e.w.s.WebMvcEndpointHandlerMapping - Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+17:07:18.804 logback-mybatis [main] INFO  o.s.b.a.e.w.s.WebMvcEndpointHandlerMapping - Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+17:07:18.868 logback-mybatis [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+17:07:18.872 logback-mybatis [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+17:07:18.880 logback-mybatis [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+17:07:18.904 logback-mybatis [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+17:07:18.918 logback-mybatis [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+17:07:19.003 logback-mybatis [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+17:07:19.007 logback-mybatis [main] INFO  c.example.RingsSpringbootApplication - Started RingsSpringbootApplication in 8.048 seconds (JVM running for 8.935)
+17:07:43.503 logback-mybatis [http-nio-8081-exec-9] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+17:07:43.503 logback-mybatis [http-nio-8081-exec-9] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+17:07:43.530 logback-mybatis [http-nio-8081-exec-9] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 27 ms
+17:07:44.027 logback-mybatis [http-nio-8081-exec-9] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+17:07:44.029 logback-mybatis [http-nio-8081-exec-9] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+17:07:45.992 logback-mybatis [http-nio-8081-exec-9] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+17:07:46.295 logback-mybatis [http-nio-8081-exec-9] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+17:07:46.302 logback-mybatis [http-nio-8081-exec-9] DEBUG c.e.mapper.GoodsMapper.findCartGoods - ==>  Preparing: SELECT g.gsName,cartNum,g.gsPrice,g.gsImage,g.gsModel FROM shopcart s,USER u,goods g WHERE s.userID =u.userID AND s.gsID = g.gsID AND u.userName = ? 
+17:07:46.330 logback-mybatis [http-nio-8081-exec-9] DEBUG c.e.mapper.GoodsMapper.findCartGoods - ==> Parameters: null
+17:07:46.355 logback-mybatis [http-nio-8081-exec-9] DEBUG c.e.mapper.GoodsMapper.findCartGoods - <==      Total: 0
+17:07:50.163 logback-mybatis [http-nio-8081-exec-5] DEBUG c.e.mapper.GoodsMapper.findCartGoods - ==>  Preparing: SELECT g.gsName,cartNum,g.gsPrice,g.gsImage,g.gsModel FROM shopcart s,USER u,goods g WHERE s.userID =u.userID AND s.gsID = g.gsID AND u.userName = ? 
+17:07:50.165 logback-mybatis [http-nio-8081-exec-5] DEBUG c.e.mapper.GoodsMapper.findCartGoods - ==> Parameters: null
+17:07:50.166 logback-mybatis [http-nio-8081-exec-5] DEBUG c.e.mapper.GoodsMapper.findCartGoods - <==      Total: 0
+17:08:03.846 logback-mybatis [http-nio-8081-exec-10] DEBUG c.e.mapper.GoodsMapper.findCartGoods - ==>  Preparing: SELECT g.gsName,cartNum,g.gsPrice,g.gsImage,g.gsModel FROM shopcart s,USER u,goods g WHERE s.userID =u.userID AND s.gsID = g.gsID AND u.userName = ? 
+17:08:03.846 logback-mybatis [http-nio-8081-exec-10] DEBUG c.e.mapper.GoodsMapper.findCartGoods - ==> Parameters: 333(String)
+17:08:03.847 logback-mybatis [http-nio-8081-exec-10] DEBUG c.e.mapper.GoodsMapper.findCartGoods - <==      Total: 0
+17:08:07.647 logback-mybatis [http-nio-8081-exec-6] DEBUG c.e.mapper.GoodsMapper.findCartGoods - ==>  Preparing: SELECT g.gsName,cartNum,g.gsPrice,g.gsImage,g.gsModel FROM shopcart s,USER u,goods g WHERE s.userID =u.userID AND s.gsID = g.gsID AND u.userName = ? 
+17:08:07.648 logback-mybatis [http-nio-8081-exec-6] DEBUG c.e.mapper.GoodsMapper.findCartGoods - ==> Parameters: 333(String)
+17:08:07.649 logback-mybatis [http-nio-8081-exec-6] DEBUG c.e.mapper.GoodsMapper.findCartGoods - <==      Total: 0
+17:08:08.935 logback-mybatis [http-nio-8081-exec-4] DEBUG c.e.mapper.GoodsMapper.selGoods - ==>  Preparing: select * from goods where gsID=? 
+17:08:08.936 logback-mybatis [http-nio-8081-exec-4] DEBUG c.e.mapper.GoodsMapper.selGoods - ==> Parameters: 7(Integer)
+17:08:08.940 logback-mybatis [http-nio-8081-exec-4] DEBUG c.e.mapper.GoodsMapper.selGoods - <==      Total: 1
+17:08:09.139 logback-mybatis [http-nio-8081-exec-4] DEBUG c.e.mapper.GoodsMapper.findCartGoods - ==>  Preparing: SELECT g.gsName,cartNum,g.gsPrice,g.gsImage,g.gsModel FROM shopcart s,USER u,goods g WHERE s.userID =u.userID AND s.gsID = g.gsID AND u.userName = ? 
+17:08:09.139 logback-mybatis [http-nio-8081-exec-4] DEBUG c.e.mapper.GoodsMapper.findCartGoods - ==> Parameters: 333(String)
+17:08:09.140 logback-mybatis [http-nio-8081-exec-4] DEBUG c.e.mapper.GoodsMapper.findCartGoods - <==      Total: 0
+17:29:57.380 logback-mybatis [lettuce-nioEventLoop-4-1] INFO  i.l.core.protocol.CommandHandler - null Unexpected exception during request: java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1108)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:345)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:646)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:581)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:498)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:460)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:884)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Unknown Source)
+17:29:57.487 logback-mybatis [lettuce-eventExecutorLoop-1-1] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was localhost/127.0.0.1:6379
+17:29:58.491 logback-mybatis [lettuce-nioEventLoop-4-2] WARN  i.l.core.protocol.ConnectionWatchdog - Cannot reconnect: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: localhost/127.0.0.1:6379
